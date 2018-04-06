@@ -7,17 +7,17 @@
     <title>AG-WEB</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">	
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
 
   </head>
   <body>
     <div class="grid-container">
-		<div class="outer-wrapper">
+		<div class="outer-wrapper format">
 		    <header>
 				<div class="header-inner-wrapper">
 				  <div class="row header-row">
 					<div class="large-2 medium-4 small-3 column menus-cols align-self-middle">
-						<button type="button" class="button float-right" data-toggle="offCanvasLeft1"><i class="fas fa-bars fa-2x"></i><p> Menus</p></button>						
+						<button type="button" class="button float-right" data-toggle="offCanvasLeft1"><i class="fas fa-bars fa-2x"></i><p> Menus</p></button>
 						<div class="row column row-cols">
 						  <div class="off-canvas-wrapper off-canvas-left-wrapper">
 							<div class="off-canvas position-left" id="offCanvasLeft1" data-off-canvas>
@@ -59,25 +59,25 @@
 								</ul>
 							</div>
 						  </div>
-						</div>			  
+						</div>
 					</div>
-					
+
 					<div class="large-7 medium-4 small-6 column text-center main-logo align-self-middle">
 					  <a href="#">
 						<img src="images/logo.png" alt="logo" class="logo-img">
 					  </a>
 					</div>
-					
+
 					<div class="large-3 medium-3 small-3 column search-col">
 					  <div class="header-search align-self-middle">
-					  
+
 						<button type="button" class="button click-search-btn" id="search-btn">
 							<i class="fas fa-search search-icon fa-lg"></i><p> Search</p>
 						</button>
 						<button type="button" class="button click-search-btn" id="cancel-search-btn">
 							<i class="fas fa-times cancel fa-lg"></i><p> Cancel</p>
 						</button>
-						
+
 						<div class="search-div">
 							<input type="text" class="slide-in-left" id="search-box" placeholder="Search Here...">
 							<button type="button" class="button">
@@ -86,36 +86,36 @@
 						</div>
 					  </div>
 					</div>
-					
+
 				  </div>
 				</div>
 			</header>
 		</div>
     </div>
-	
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="js/jquery.min.js"></script>
-	<script> 
+	<script>
 	$(document).ready(function(){
 		$(".click-search-btn").click(function(){
 			$(".search-div").animate({
 				width: 'toggle'
 			});
 		});
-		
+
 		$('#search-btn').click(function() {
 			$('#search-btn').hide();
 			$('#cancel-search-btn').show();
-		});	
-		
+		});
+
 		$('#cancel-search-btn').click(function() {
 			$('#cancel-search-btn').hide();
 			$('#search-btn').show();
 		});
-		
+
 	});
 
 	</script>
